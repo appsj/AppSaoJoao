@@ -38,6 +38,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'pro.appus:zoom-splash:1.0.0'
     compile 'io.saeid:fab-loading:1.0.0'
+
     //noinspection GradleCompatible
     compile 'com.android.support:palette-v7:27.1.0'
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
