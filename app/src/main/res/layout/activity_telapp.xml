@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.group.uni.sojoo2018.activities.telaAtracoes.atracoesParqueDoPovoNAOUSADO.TelaAtracoesPP">
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/activity_main_card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:elevation="17dp"
+        android:paddingBottom="42dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:visibility="visible"
+        app:elevationEnabled="true"
+        app:leftOverlay="@layout/overlay_left"
+        app:rightOverlay="@layout/overlay_right"
+        app:scaleDiff="0.02"
+        app:stackFrom="top"
+        app:swipeDirection="freedom_no_bottom"
+        app:swipeEnabled="true"
+        app:swipeThreshold="0.75"
+        app:topOverlay="@layout/overlay_top"
+        app:translationDiff="12"
+        app:visibleCount="3" />
+    <include layout="@layout/toolbar"
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scrollIndicators="bottom"
+            android:scrollbars="vertical" >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/frase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swipe_refresh_recycler_list"
+        android:paddingBottom="15dp"
+        android:paddingLeft="18dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hoje"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_shows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/frase"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

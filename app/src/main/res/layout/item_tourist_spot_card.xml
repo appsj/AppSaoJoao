@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:layout_marginTop="20dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_tourist_spot_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bgscrooll" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="false"
+            android:background="@color/bgdetails"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/okbutton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/success"
+                android:tint="@color/check"
+                app:srcCompat="@drawable/success" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/item_tourist_spot_card_city"
+                        android:src="@drawable/youtube"
+                        app:srcCompat="@drawable/youtube" />
+
+                    <TextView
+                        android:id="@+id/data2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:layout_toEndOf="@+id/imageView2"
+
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Coração Vagabundo"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/item_tourist_spot_card_city"
+                        android:src="@drawable/youtube"
+                        app:srcCompat="@drawable/youtube" />
+
+                    <TextView
+                        android:id="@+id/data2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:layout_toEndOf="@+id/imageView2"
+
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Sonhei que tava me casando"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_tourist_spot_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="258dp"
+                android:text="Wesley Safadão"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="12 Jun"
+                android:textColor="@android:color/white"
+
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/data3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/data"
+                android:layout_marginStart="9dp"
+                android:text="20:00"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_tourist_spot_card_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/item_tourist_spot_card_name"
+                android:layout_marginTop="36dp"
+                android:text="Vem safadaaaaaaaaaao!"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/item_tourist_spot_card_name"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/instagram"
+                app:srcCompat="@drawable/instagram"
+                />
+
+            <TextView
+                android:id="@+id/oktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/okbutton"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/okbutton"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="Eu fui!"
+                android:textColor="#FFF1B718"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/icon512a"
+                app:srcCompat="@mipmap/icon512a" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

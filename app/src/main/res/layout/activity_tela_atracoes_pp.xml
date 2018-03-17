@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.group.uni.sojoo2018.activities.telaAtracoes.atracoesParqueDoPovoNAOUSADO.TelaAtracoesPP">
+
+
+
+     <include layout="@layout/toolbar"
+         android:id="@+id/t2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         />
+
+
+
+    <include layout="@layout/content_tela_atracoes_pp"
+        android:layout_below="@id/t2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

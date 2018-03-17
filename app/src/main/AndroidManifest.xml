@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group.uni.sojoo2018">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon512a"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon512a"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.telaInicial.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/mainActivty" />
+        <activity
+            android:name=".activities.telaSplash.SplashScreen"
+            android:theme="@style/SplashTeme" />
+        <activity
+            android:name=".activities.telaSobre.TelaSobre"
+            android:label="@string/title_activity_tela_sobre"
+            android:parentActivityName=".activities.telaSobre.TelaSobre"
+            android:theme="@style/mainActivty">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaInicial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.telaAtracoes.TelaAtracoes"
+            android:label="@string/title_activity_tela_atracoes"
+            android:parentActivityName=".activities.telaInicial.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaInicial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.telaAtracoes.atracoesParqueDoPovoNAOUSADO.TelaAtracoesPP"
+            android:label="@string/title_activity_tela_atracoes_pp"
+            android:parentActivityName=".activities.telaAtracoes.TelaAtracoes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.telaCultura.TelaCultura"
+            android:label="@string/title_activity_cultura"
+            android:parentActivityName=".activities.telaInicial.MainActivity"
+            android:theme="@style/cultura">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaInicial.MainActivity" />
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".activities.telaCultura.ViewImage" -->
+        <!-- android:parentActivityName=".activities.telaCultura.TelaCultura" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="com.group.uni.sojoo2018.activities.telaCultura.TelaCultura" /> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".activities.telaAtracoes.telaShowsPP.TelaShowsPP"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaAtracoes.TelaAtracoes" />
+        </activity>
+        <activity
+            android:name=".activities.telaAtracoes.telaShowsPP.detalhes.TelaDetalhesPPNAOUSADO"
+            android:label="@string/title_activity_tela_detalhes_pp"
+            android:parentActivityName=".activities.telaAtracoes.telaShowsPP.TelaShowsPP"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.telaAtracoes.telaShowsPP.TelaShowsPP" />
+        </activity>
+        <activity
+            android:name=".activities.telaApresentacao.TelaApresentacao"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activities.telaForrodometro.TelaForrodometro"
+            android:label="@string/title_activity_tela_forrodometro"
+            android:parentActivityName=".activities.telaInicial.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaInicial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.telaLogin.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TelaSplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.telaNoticias.TelaUltimasNoticias"
+            android:label="@string/title_activity_tela_ultimas_noticias"
+            android:parentActivityName=".activities.telaInicial.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.telaAtracoes.telaShowsPP.TelaShowsPPAZ"
+            android:label="@string/title_activity_tela_shows_ppaz"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.telaAtracoes.TelaEventos"
+            android:label="@string/title_activity_tela_eventos"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group.uni.sojoo2018.activities.telaInicial.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

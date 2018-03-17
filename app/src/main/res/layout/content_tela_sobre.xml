@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.group.uni.sojoo2018.activities.telaSobre.TelaSobre"
+    tools:showIn="@layout/activity_sobre">
+
+    <RelativeLayout
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/icon512a" />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/foto"
+            android:layout_below="@+id/textView2"
+
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foto"
+            android:layout_centerHorizontal="true"
+            android:text="App São João 2018"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignTop="@+id/imageButton"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:padding="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="hfhfhthfd gfgdfgd gfdgdf gdh gh fg h rt h g dg d g tdh fthfhfghf hfhfhthft h hf hgghg ghfg f hgf hfghfgf h fghfhh hghfghf daksdçkvlf [d gfgdfgd gfdgdf gdh gh fg h rt h g dg d g tdh fthfhfghf hfhfhthft h hf hgghg ghfg f hgf hfghfgf h fghfhh hghfghf daksdçkvlf [d gfgdfgd gfdgdf gdh gh fg h rt h g dg d g tdh fthfhfghf hfhfhthft h hf hgghg ghfg f hgf hfghfgf h fghfhh hghfghf "
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qq"
+        android:background="@drawable/shape"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <GridView
+            android:id="@+id/grid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"
+            android:columnWidth="100dp"
+            android:gravity="center"
+
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
