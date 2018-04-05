@@ -31,7 +31,7 @@ public class TelaSplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_splash);
-        fogos();
+        //fogos();
         l2 = (RelativeLayout) findViewById(R.id.l2);
         //   uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
         downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
@@ -63,7 +63,7 @@ public class TelaSplashActivity extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
 
     }
-    public void fogos() {
+   /*public void fogos() {
         new ParticleSystem(this, 40, R.drawable.confeti2, 5000)
                 .setSpeedModuleAndAngleRange(0f, 0.1f, 180, 180)
                 .setRotationSpeed(144)
@@ -75,6 +75,6 @@ public class TelaSplashActivity extends AppCompatActivity {
                 .setRotationSpeed(144)
                 .setAcceleration(0.001197f, 60)
                 .emit(findViewById(R.id.emiter_top_left), 10);
-    }
+    } */
 
 }
